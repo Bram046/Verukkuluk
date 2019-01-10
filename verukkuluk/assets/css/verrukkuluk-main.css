@@ -1,0 +1,431 @@
+/* 
+    Document   : duel-main.css
+    Created on : 5-jun-2013, 16:51:35
+    Author     : R. Krewinkel
+    Description:
+
+    Main Application stylesheet. 
+
+    Branding will occur from within the application
+
+*/
+
+
+/* Font specifications */
+
+
+/* Basic stuff */
+root { 
+    display: block;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+html, body {
+    background: rgb(178,51,8);
+        background: url(../img/backdrop.svg) rgb(178,51,8) no-repeat center center fixed;
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.top-bar {
+    color: rgb(255,255,255);
+    height: 200px;
+    position: fixed;
+    width: 100%;
+    top: -30px;
+    text-transform: lowercase;
+    z-index: 100;
+    overflow: hidden;
+    background: url(../img/background.png) repeat-x;
+}
+
+
+.title-bar {
+        
+    color: rgb(255,255,255);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    padding-left: 140px;
+    padding-top: 10px;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+
+
+.logo {
+    margin-left: 10px;
+    margin-top: 35px;
+    width: auto;
+    height: 100px;
+    background: url(../img/logo.svg) no-repeat;
+
+}
+
+
+
+h1 {
+    color: rgb(178,51,8);
+    font-size: 38px !important;
+}
+ 
+h2 {
+    font-size: 28px !important;
+    color: rgb(178,51,8) !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    color: rgb(178,51,8) !important;
+}
+
+h4 {
+    font-size: 16px !important;
+    color: rgb(178,51,8) !important;
+    line-height: 14px;
+    margin-top: 20px;
+}
+h5 {
+    font-size: 16px !important;
+    color: rgb(0,0,0) !important;
+    line-height: 15px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: rgb(178,51,8) !important;
+    border: none;
+}
+
+.thumbnail {
+    background: rgba(254,246,231,1) !important;
+    border: none;
+}
+
+
+#dynamic {
+    position: absolute;
+    padding: 0; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 160px;
+    bottom: 40px;
+    left: 140px;
+    right: 140px;
+    
+}
+
+
+.top-menu {
+    right: 100px;
+    top: 20px;
+    position: absolute;
+}
+
+.dataTables_info {
+    font-size: 11px;
+    color: rgb(62,113,188);
+    text-align: right;
+        padding-right: 16px;
+
+}
+
+.dataTables_filter {
+    font-size: 11px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 16px;
+}
+
+.menu {
+    position: relative;
+    color: rgb(255,255,255);
+    left: 140px;
+    /*right: 80px;*/
+    width: 80%;
+    max-width: 80%;
+}
+
+.menu h1 {
+    font-family: "NexaLight" !important;
+    font-size: 16px !important;
+    color: rgb(255,255,255);
+}
+
+.menu ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.menu a:hover {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+#plus {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    background: #111;
+    cursor:pointer;
+}
+
+#plus:hover {
+    color: rgb(62,113,188);
+}
+
+.highlight {
+    color: rgb(62,113,188);
+}
+.logo a:hover {
+    color: rgb(255,255,255);
+}
+
+.username {
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
+    color: rgb(255,255,255);
+    text-transform: none;
+}
+
+.copyright {
+    text-transform: none !important;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+}
+
+.copyright a {
+    font-size: 11px;
+}
+
+.about {
+    text-transform: none !important;
+    line-height: 24px !important;
+}
+
+.td-content {
+    font-size: 12px;
+    white-space:nowrap;
+}
+
+.td-center {
+    font-size: 12px;
+    white-space:nowrap;
+    text-align: center !important;
+}
+
+.td-center-small-delete {
+    font-size: 12px;
+    white-space:nowrap;
+    width: 40px !important;
+    text-align: center !important;
+    cursor: pointer;
+}
+
+.td-right {
+    font-size: 12px;
+    white-space:nowrap;
+    text-align: right !important;
+}
+
+.td-left {
+    font-size: 12px;
+    /*white-space:nowrap;*/
+    text-align: left !important;
+}
+
+.td-left-prompt {
+    font-size: 12px;
+    /*text-align: right !important;
+    width: 150px;
+    font-weight: normal;
+    padding-right: 30px;
+    */
+
+}
+
+
+.td-date {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: center !important;
+    width: 70px;
+}
+
+.td-name {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: left !important;
+    width: 120px;
+}
+
+.td-code {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: left !important;
+    width: 80px;
+    min-width: 80px;
+}
+
+.td-approved {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: center !important;
+    width: 30px;
+    max-width: 30px;
+    min-width: 30px;
+}
+
+.td-amount {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: right !important;
+    width: 50px;
+    max-width: 80px;
+    min-width: 50px;
+}
+
+.td-attachement {
+    font-size: 12px;
+    white-space:nowrap !important;
+    text-align: center !important;
+    width: 30px;
+    max-width: 30px;
+    min-width: 30px;
+}
+
+
+.td-left-wrap {
+    font-size: 12px;
+    white-space: normal;
+    text-align: left !important;
+}
+
+label {
+    font-size: 12px;
+    white-space:nowrap;
+}
+
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: pointer;
+    *cursor: hand;
+}
+ 
+table.table thead .sorting { background: url('../images/sort_both.png') no-repeat center right; }
+table.table thead .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
+table.table thead .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
+ 
+table.table thead .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
+table.table thead .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+
+
+/* Stylish Search Form */
+    .dataTables_filter {
+        margin:0;
+        margin-top: 5px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+ 
+    .dataTables_filter input[type="text"] {
+        padding-right: 10px !important;
+        padding-right: 10px \9 !important;
+        padding-left: 10px !important;
+        padding-left: 10px \9 !important;
+        font-size: 12px;
+        
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0 !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        border-radius: 10px !important;
+    }
+ 
+   .dataTables_filter button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    input:focus + button {
+        z-index: 3;   
+    }
+    
+    
+          /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      .footer-alert {
+            position: fixed;
+            left: 20%;
+            top: 80%;
+            z-index: 2020;
+            width: 50%;
+
+      }
+    
